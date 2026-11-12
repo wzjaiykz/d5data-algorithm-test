@@ -138,6 +138,11 @@ in-sample, optimistic estimate; a held-out dev/test split is the next step.
   and cost.
 * `<output stem>.confusions.csv` and `<output stem>.errors.csv`.
 
+In `summary`, `n_api_errors` counts rows with no valid label (API or parse
+failure), while `n_misclassified` counts wrong labels (`n_total - correct`).
+For the committed runs these are 0 and 44/37/8 respectively; "errors" in the
+report always means `n_misclassified`.
+
 Committed results:
 
 ```

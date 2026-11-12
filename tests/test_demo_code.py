@@ -101,6 +101,10 @@ def test_metrics_basic():
     assert metrics["summary"]["accuracy"] == pytest.approx(0.75)
     assert metrics["summary"]["correct"] == 3
     assert metrics["summary"]["n_total"] == 4
+    assert metrics["summary"]["n_api_errors"] == 0
+    assert metrics["summary"]["n_misclassified"] == 1
+    assert "n_errors" not in metrics["summary"]
+    assert "n_errors" not in metrics["run"]
     assert metrics["top_confusions"][0] == {
         "gold": "Refund_not_showing_up",
         "predicted": "card_arrival",
@@ -119,6 +123,36 @@ def test_cost_estimate_uses_cache_and_output_prices():
     cost = demo_code.estimate_cost(usage, "deepseek-flash")
     assert cost["off_peak_usd"] == pytest.approx(0.75)
     assert cost["peak_usd"] == pytest.approx(1.50)
+
+
+def test_metrics_separates_api_errors_from_misclassifications():
+    records = [
+        _record("card_arrival", "card_arrival", 0.9, 0),
+        _record("card_not_working", "card_not_working", 0.8, 1),
+        _record("Refund_not_showing_up", "card_arrival", 0.4, 2),
+        _record("Refund_not_showing_up", "card_arrival", 0.3, 3),
+    ]
+    errored = records[3]
+    errored["predicted_label"] = None
+    errored["correct"] = False
+    errored["error"] = "fatal: HTTP 401"
+    errored["error_type"] = "fatal"
+
+    metrics = demo_code.compute_metrics(
+        records,
+        LABELS,
+        model="deepseek-flash",
+        prompt_variant="zero_shot",
+        wall_clock_s=1.0,
+        run_metadata={},
+    )
+
+    assert metrics["summary"]["n_total"] == 4
+    assert metrics["summary"]["n_scored"] == 3
+    assert metrics["summary"]["correct"] == 2
+    assert metrics["summary"]["n_api_errors"] == 1
+    assert metrics["summary"]["n_misclassified"] == 2
+    assert metrics["summary"]["accuracy"] == pytest.approx(2 / 3, abs=1e-4)
 
 
 def test_mock_end_to_end(work_dir):
@@ -157,6 +191,8 @@ def test_mock_end_to_end(work_dir):
     metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
     assert metrics["summary"]["n_total"] == 6
     assert metrics["summary"]["n_scored"] == 6
+    assert metrics["summary"]["n_api_errors"] == 0
+    assert metrics["summary"]["n_misclassified"] == 6 - metrics["summary"]["correct"]
     assert (work_dir / "predictions.metrics.errors.csv").exists()
     assert (work_dir / "predictions.metrics.confusions.csv").exists()
 

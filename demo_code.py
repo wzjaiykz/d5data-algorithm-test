@@ -640,6 +640,10 @@ def compute_metrics(
     cost = estimate_cost(usage_totals, model)
     actual_errors = sum(1 for r in records if r.get("error"))
     valid_labels = sum(1 for r in records if r.get("predicted_label") in labels)
+    # n_errors is the count of rows without a valid label (API/parse failure).
+    # It is *not* the number of wrong labels; keep the two concepts separate.
+    n_api_errors = n_errors
+    n_misclassified = n_total - correct
 
     return {
         "run": {
@@ -649,13 +653,14 @@ def compute_metrics(
             "wall_clock_s": round(wall_clock_s, 2),
             "n_total": n_total,
             "n_scored": n_scored,
-            "n_errors": n_errors,
             "n_invalid_label_or_parse": n_errors,
             "n_api_errors": actual_errors,
             "n_valid_labels": valid_labels,
             "accuracy_ci95_wilson": [round(low_ci, 4), round(high_ci, 4)],
             "notes": (
-                "accuracy excludes rows with no valid label; n_errors counts them. "
+                "accuracy excludes rows with no valid label; "
+                "n_invalid_label_or_parse counts them. "
+                "n_misclassified in summary counts wrong labels. "
                 "The sample is 3 examples per intent, so per-class accuracy is coarse."
             ),
         },
@@ -664,8 +669,9 @@ def compute_metrics(
             "macro_f1": round(macro_f1, 4),
             "correct": correct,
             "n_scored": n_scored,
-            "n_errors": n_errors,
             "n_total": n_total,
+            "n_api_errors": n_api_errors,
+            "n_misclassified": n_misclassified,
             "perfect_classes": perfect_classes,
             "zero_accuracy_classes": zero_classes,
             "n_classes": len(labels),
@@ -940,7 +946,8 @@ def main(argv: list[str] | None = None) -> int:
         print(
             f"accuracy={summary['accuracy']:.4f} macro_f1={summary['macro_f1']:.4f} "
             f"correct={summary['correct']}/{summary['n_scored']} "
-            f"errors={summary['n_errors']} wall={wall_clock_s:.1f}s",
+            f"misclassified={summary['n_misclassified']} "
+            f"api_errors={summary['n_api_errors']} wall={wall_clock_s:.1f}s",
             file=sys.stderr,
         )
         cost = metrics.get("cost") or {}
@@ -952,7 +959,7 @@ def main(argv: list[str] | None = None) -> int:
             )
         print(f"wrote {args.output} and {metrics_path}", file=sys.stderr)
 
-    if summary["n_errors"] == len(records) and records:
+    if summary["n_api_errors"] == len(records) and records:
         return 1
     return 0
 

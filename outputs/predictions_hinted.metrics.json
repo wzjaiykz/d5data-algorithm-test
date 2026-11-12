@@ -13,7 +13,6 @@
     "wall_clock_s": 36.65,
     "n_total": 231,
     "n_scored": 231,
-    "n_errors": 0,
     "n_invalid_label_or_parse": 0,
     "n_api_errors": 0,
     "n_valid_labels": 231,
@@ -21,14 +20,15 @@
       0.787,
       0.8815
     ],
-    "notes": "accuracy excludes rows with no valid label; n_errors counts them. The sample is 3 examples per intent, so per-class accuracy is coarse."
+    "notes": "accuracy excludes rows with no valid label; n_invalid_label_or_parse counts them. n_misclassified in summary counts wrong labels. The sample is 3 examples per intent, so per-class accuracy is coarse."
   },
   "summary": {
     "accuracy": 0.8398,
     "macro_f1": 0.8275,
     "correct": 194,
     "n_scored": 231,
-    "n_errors": 0,
+    "n_api_errors": 0,
+    "n_misclassified": 37,
     "n_total": 231,
     "perfect_classes": 53,
     "zero_accuracy_classes": 3,

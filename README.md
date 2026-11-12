@@ -1,5 +1,7 @@
 # Auto-Labeling Banking Support Intents with a Foundation Model
 
+[![CI](https://github.com/wzjaiykz/d5data-algorithm-test/actions/workflows/ci.yml/badge.svg)](https://github.com/wzjaiykz/d5data-algorithm-test/actions/workflows/ci.yml)
+
 A small, reproducible auto-labeling pipeline for **Banking77** (77 fine-grained
 online-banking intents) using DeepSeek's OpenAI-compatible chat API. It is a
 batch classifier, not an agent: one API call per utterance, no tools, no memory,

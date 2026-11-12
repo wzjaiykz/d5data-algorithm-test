@@ -1,0 +1,231 @@
+{"id": "b77-0001", "text": "Can I use my account without verifying my identity?", "gold_label": "why_verify_identity", "split": "test"}
+{"id": "b77-0002", "text": "I need help finding the verification code for my top-up card.", "gold_label": "verify_top_up", "split": "test"}
+{"id": "b77-0003", "text": "How can I get my card out of the damn ATM?", "gold_label": "card_swallowed", "split": "test"}
+{"id": "b77-0004", "text": "How do I deal with a stolen card?", "gold_label": "lost_or_stolen_card", "split": "test"}
+{"id": "b77-0005", "text": "I want to go back on what I did this morning", "gold_label": "cancel_transfer", "split": "test"}
+{"id": "b77-0006", "text": "How many disposable cards can I make in a single day?", "gold_label": "disposable_card_limits", "split": "test"}
+{"id": "b77-0007", "text": "Why has my card payment been declined?", "gold_label": "declined_card_payment", "split": "test"}
+{"id": "b77-0008", "text": "Do you have a top-up limit?", "gold_label": "top_up_limits", "split": "test"}
+{"id": "b77-0009", "text": "I transferred some money but the recipient is having trouble withdrawing.", "gold_label": "transfer_not_received_by_recipient", "split": "test"}
+{"id": "b77-0010", "text": "I tried to use my card to top up but all of the money has disappeared.", "gold_label": "topping_up_by_card", "split": "test"}
+{"id": "b77-0011", "text": "I didn't take out money from an ATM but my app statement shows that I did. How can I fix this?", "gold_label": "cash_withdrawal_not_recognised", "split": "test"}
+{"id": "b77-0012", "text": "Can you explain the transfer fee to me?", "gold_label": "transfer_fee_charged", "split": "test"}
+{"id": "b77-0013", "text": "What do i have to do to change my name?", "gold_label": "edit_personal_details", "split": "test"}
+{"id": "b77-0014", "text": "What does it mean when my top up is saying  still pending?", "gold_label": "pending_top_up", "split": "test"}
+{"id": "b77-0015", "text": "I have withdrawn cash from ATM but i received the wrong amount. I want cash back as in app its showing actual amount which i got. Please help me in this.", "gold_label": "wrong_amount_of_cash_received", "split": "test"}
+{"id": "b77-0016", "text": "My card is about to expire. What do I need to do?", "gold_label": "card_about_to_expire", "split": "test"}
+{"id": "b77-0017", "text": "Could I open an account for my children?", "gold_label": "age_limit", "split": "test"}
+{"id": "b77-0018", "text": "If you send me more cards, are there any charges?", "gold_label": "getting_spare_card", "split": "test"}
+{"id": "b77-0019", "text": "I got 2 transfer fees and I thought transfers were free.", "gold_label": "transfer_fee_charged", "split": "test"}
+{"id": "b77-0020", "text": "When adding money, what are the currencies you take?", "gold_label": "supported_cards_and_currencies", "split": "test"}
+{"id": "b77-0021", "text": "Can I hold money in multiple currencies?", "gold_label": "fiat_currency_support", "split": "test"}
+{"id": "b77-0022", "text": "This company sucks! Can you terminate my account?", "gold_label": "terminate_account", "split": "test"}
+{"id": "b77-0023", "text": "How do i cancel my transaction?", "gold_label": "cancel_transfer", "split": "test"}
+{"id": "b77-0024", "text": "How can i check if my card is working?", "gold_label": "card_not_working", "split": "test"}
+{"id": "b77-0025", "text": "I need the right foreign money, at the right rate, at ATMs, when I go abroad.", "gold_label": "wrong_exchange_rate_for_cash_withdrawal", "split": "test"}
+{"id": "b77-0026", "text": "How do I transfer money to my account?", "gold_label": "transfer_into_account", "split": "test"}
+{"id": "b77-0027", "text": "Is there tracking info available?", "gold_label": "card_arrival", "split": "test"}
+{"id": "b77-0028", "text": "Where can I find the source of my available money?", "gold_label": "verify_source_of_funds", "split": "test"}
+{"id": "b77-0029", "text": "What is the minimum age?", "gold_label": "age_limit", "split": "test"}
+{"id": "b77-0030", "text": "Why am I not able to verify my id?", "gold_label": "unable_to_verify_identity", "split": "test"}
+{"id": "b77-0031", "text": "Can I cancel a transfer", "gold_label": "cancel_transfer", "split": "test"}
+{"id": "b77-0032", "text": "My account shows the card payment cancelled.", "gold_label": "reverted_card_payment?", "split": "test"}
+{"id": "b77-0033", "text": "What's the deal with no cryptocurrency on your app?", "gold_label": "beneficiary_not_allowed", "split": "test"}
+{"id": "b77-0034", "text": "Somebody used my card to make a purchase", "gold_label": "card_payment_not_recognised", "split": "test"}
+{"id": "b77-0035", "text": "Can I get my paycheck through here?", "gold_label": "receiving_money", "split": "test"}
+{"id": "b77-0036", "text": "Why has my transfer failed?", "gold_label": "failed_transfer", "split": "test"}
+{"id": "b77-0037", "text": "Where do I link the new card?", "gold_label": "card_linking", "split": "test"}
+{"id": "b77-0038", "text": "I am waiting for my card to arrive.", "gold_label": "card_delivery_estimate", "split": "test"}
+{"id": "b77-0039", "text": "Why didn't my balance update after my cash or checque deposit?", "gold_label": "balance_not_updated_after_cheque_or_cash_deposit", "split": "test"}
+{"id": "b77-0040", "text": "\nWhere can I get my PIN unblocked?", "gold_label": "pin_blocked", "split": "test"}
+{"id": "b77-0041", "text": "How do I get the contactless feature to work for my card?", "gold_label": "contactless_not_working", "split": "test"}
+{"id": "b77-0042", "text": "I am travelling for two more weeks but really need to change my PIN asap. What do I do?", "gold_label": "change_pin", "split": "test"}
+{"id": "b77-0043", "text": "Is there a charge for physical cards", "gold_label": "order_physical_card", "split": "test"}
+{"id": "b77-0044", "text": "I am not Happy with this product can i get a refund?", "gold_label": "request_refund", "split": "test"}
+{"id": "b77-0045", "text": "I know I didn't make this payment showing up on my card, I don't remember this person at all.", "gold_label": "card_payment_not_recognised", "split": "test"}
+{"id": "b77-0046", "text": "Where are the options to top up with a cheque on my account?", "gold_label": "top_up_by_cash_or_cheque", "split": "test"}
+{"id": "b77-0047", "text": "Why was my payment reversed?", "gold_label": "reverted_card_payment?", "split": "test"}
+{"id": "b77-0048", "text": "When does the money get transferred to my account", "gold_label": "transfer_timing", "split": "test"}
+{"id": "b77-0049", "text": "What is the reason my transfer was declined?", "gold_label": "declined_transfer", "split": "test"}
+{"id": "b77-0050", "text": "Someone needs to make me aware when there are extra charges for payments. I happened to be looking at the app earlier and noticed a charge associated to a payment that was extra that no one made me aware of before at all.", "gold_label": "card_payment_fee_charged", "split": "test"}
+{"id": "b77-0051", "text": "Would it be possible to get another card?", "gold_label": "getting_spare_card", "split": "test"}
+{"id": "b77-0052", "text": "Can you let me know if Visa is among the card scheme assignments?", "gold_label": "visa_or_mastercard", "split": "test"}
+{"id": "b77-0053", "text": "Help me find my card pin!", "gold_label": "get_physical_card", "split": "test"}
+{"id": "b77-0054", "text": "What is the top-ups limit?", "gold_label": "top_up_limits", "split": "test"}
+{"id": "b77-0055", "text": "Does it cost to exchange currencies with this card?", "gold_label": "exchange_charge", "split": "test"}
+{"id": "b77-0056", "text": "I need to do a refund", "gold_label": "request_refund", "split": "test"}
+{"id": "b77-0057", "text": "My cash deposit from a week ago hasn't shown up. I need the money - how quickly can you sort this out?", "gold_label": "balance_not_updated_after_cheque_or_cash_deposit", "split": "test"}
+{"id": "b77-0058", "text": "My virtual card isn't working. What do I do?", "gold_label": "virtual_card_not_working", "split": "test"}
+{"id": "b77-0059", "text": "Why did I get blocked?", "gold_label": "pin_blocked", "split": "test"}
+{"id": "b77-0060", "text": "im not sure what this charge is for", "gold_label": "card_payment_fee_charged", "split": "test"}
+{"id": "b77-0061", "text": "I was taking out funds and was unable to regain my card.", "gold_label": "card_swallowed", "split": "test"}
+{"id": "b77-0062", "text": "My card has been swallowed by an ATM", "gold_label": "card_swallowed", "split": "test"}
+{"id": "b77-0063", "text": "What is the source of my funds.", "gold_label": "verify_source_of_funds", "split": "test"}
+{"id": "b77-0064", "text": "how can i top up?", "gold_label": "topping_up_by_card", "split": "test"}
+{"id": "b77-0065", "text": "Can I use a bank transfer to refill my account?", "gold_label": "transfer_into_account", "split": "test"}
+{"id": "b77-0066", "text": "How come I can't take money out of the ATM?", "gold_label": "declined_cash_withdrawal", "split": "test"}
+{"id": "b77-0067", "text": "For what reason would a top up be reverted and returned to my account?", "gold_label": "top_up_reverted", "split": "test"}
+{"id": "b77-0068", "text": "I forgot my password", "gold_label": "passcode_forgotten", "split": "test"}
+{"id": "b77-0069", "text": "Why was I chaged twice for the same thing?", "gold_label": "transaction_charged_twice", "split": "test"}
+{"id": "b77-0070", "text": "I have a new card and I want to activate it", "gold_label": "activate_my_card", "split": "test"}
+{"id": "b77-0071", "text": "Why is there a transaction that shows multiple times?", "gold_label": "transaction_charged_twice", "split": "test"}
+{"id": "b77-0072", "text": "How do the disposable cards work?", "gold_label": "get_disposable_virtual_card", "split": "test"}
+{"id": "b77-0073", "text": "how do i add money with my apple watch", "gold_label": "apple_pay_or_google_pay", "split": "test"}
+{"id": "b77-0074", "text": "Can I do a bank transfer to put additional money in my account because I am out of money?", "gold_label": "transfer_into_account", "split": "test"}
+{"id": "b77-0075", "text": "I had a payment that I made and it's been some amount of time and would like to know when it's suppose to go though.", "gold_label": "pending_card_payment", "split": "test"}
+{"id": "b77-0076", "text": "I got less cash than the one I specified in the ATM", "gold_label": "wrong_amount_of_cash_received", "split": "test"}
+{"id": "b77-0077", "text": "How much do I have to pay for the exchange fee?", "gold_label": "exchange_charge", "split": "test"}
+{"id": "b77-0078", "text": "Why is there an extra 1 pound charge on my card?", "gold_label": "extra_charge_on_statement", "split": "test"}
+{"id": "b77-0079", "text": "Are you able to locate my card?", "gold_label": "lost_or_stolen_card", "split": "test"}
+{"id": "b77-0080", "text": "I don't want the item, I bought it on accident, can I get a refund?", "gold_label": "request_refund", "split": "test"}
+{"id": "b77-0081", "text": "How can I top-up my card?", "gold_label": "top_up_by_cash_or_cheque", "split": "test"}
+{"id": "b77-0082", "text": "I am concerned about the security in my account and would like to make a dispute.", "gold_label": "direct_debit_payment_not_recognised", "split": "test"}
+{"id": "b77-0083", "text": "Where is the auto top-up option?", "gold_label": "automatic_top_up", "split": "test"}
+{"id": "b77-0084", "text": "How long until the money is in my account?", "gold_label": "transfer_timing", "split": "test"}
+{"id": "b77-0085", "text": "How long does it take for transfers to finish?  I sent funds to my pal, and she says that she has not gotten anything.", "gold_label": "transfer_not_received_by_recipient", "split": "test"}
+{"id": "b77-0086", "text": "How do I go about activating my new card?", "gold_label": "activate_my_card", "split": "test"}
+{"id": "b77-0087", "text": "The exchange rate you gave me for my cash withdrawal is wrong", "gold_label": "wrong_exchange_rate_for_cash_withdrawal", "split": "test"}
+{"id": "b77-0088", "text": "Can I be given a new passcode?", "gold_label": "passcode_forgotten", "split": "test"}
+{"id": "b77-0089", "text": "Why did I not get a virtual card yet?", "gold_label": "getting_virtual_card", "split": "test"}
+{"id": "b77-0090", "text": "Can I use Apple Pay to top up?", "gold_label": "apple_pay_or_google_pay", "split": "test"}
+{"id": "b77-0091", "text": "Do my kids have to be a certain age to use this service?", "gold_label": "age_limit", "split": "test"}
+{"id": "b77-0092", "text": "I need to order a  new card, mine is about to expire and I need to know how much it will cost and how long until I receive it.", "gold_label": "card_about_to_expire", "split": "test"}
+{"id": "b77-0093", "text": "When using a US card, what is the cost for a top up/off?", "gold_label": "top_up_by_card_charge", "split": "test"}
+{"id": "b77-0094", "text": "Someone has stolen my card. Even though I have my card with me, someone just made a 500£ cash withdrawal. Please help as soon as possible.", "gold_label": "cash_withdrawal_not_recognised", "split": "test"}
+{"id": "b77-0095", "text": "I tried to make a transfer but it failed", "gold_label": "failed_transfer", "split": "test"}
+{"id": "b77-0096", "text": "The ATM is declining my card. I tried at two different ATMs. Can you tell me if there's anything wrong with my account?", "gold_label": "declined_cash_withdrawal", "split": "test"}
+{"id": "b77-0097", "text": "It seems there is an incorrect listing of a direct debit payment on my app that I did not make", "gold_label": "direct_debit_payment_not_recognised", "split": "test"}
+{"id": "b77-0098", "text": "what are exchange rates", "gold_label": "exchange_rate", "split": "test"}
+{"id": "b77-0099", "text": "I would like to reactivate my card.", "gold_label": "card_linking", "split": "test"}
+{"id": "b77-0100", "text": "How many transactions can I do with one disposable card?", "gold_label": "disposable_card_limits", "split": "test"}
+{"id": "b77-0101", "text": "I want to buy cryptocurrency, but your app doesn't let me. Why?", "gold_label": "beneficiary_not_allowed", "split": "test"}
+{"id": "b77-0102", "text": "Is my country supported", "gold_label": "country_support", "split": "test"}
+{"id": "b77-0103", "text": "How long does a card delivery take?", "gold_label": "card_arrival", "split": "test"}
+{"id": "b77-0104", "text": "What places will accept my card for payment?", "gold_label": "card_acceptance", "split": "test"}
+{"id": "b77-0105", "text": "What is the need to verify my identity?", "gold_label": "why_verify_identity", "split": "test"}
+{"id": "b77-0106", "text": "How do I use a disposable virtual card?", "gold_label": "get_disposable_virtual_card", "split": "test"}
+{"id": "b77-0107", "text": "Should I just wait until the post office sends a change of address form?", "gold_label": "edit_personal_details", "split": "test"}
+{"id": "b77-0108", "text": "What fiat currencies are used for holding transactions?", "gold_label": "fiat_currency_support", "split": "test"}
+{"id": "b77-0109", "text": "Will there be any extra fees for European bank card for top up?", "gold_label": "top_up_by_card_charge", "split": "test"}
+{"id": "b77-0110", "text": "My salary is in GBP; how can I note this in the app?", "gold_label": "receiving_money", "split": "test"}
+{"id": "b77-0111", "text": "I got mugged yesterday and can't use the app.", "gold_label": "lost_or_stolen_phone", "split": "test"}
+{"id": "b77-0112", "text": "At which ATMs can I use this card?", "gold_label": "atm_support", "split": "test"}
+{"id": "b77-0113", "text": "For what reason was my transfer declined?", "gold_label": "declined_transfer", "split": "test"}
+{"id": "b77-0114", "text": "How can I top up with this cheque I got?", "gold_label": "top_up_by_cash_or_cheque", "split": "test"}
+{"id": "b77-0115", "text": "Freeze my account it's been hacked.", "gold_label": "compromised_card", "split": "test"}
+{"id": "b77-0116", "text": "Where do I verify my identity?", "gold_label": "verify_my_identity", "split": "test"}
+{"id": "b77-0117", "text": "My transfer has been declined and I know it should have went through.", "gold_label": "declined_transfer", "split": "test"}
+{"id": "b77-0118", "text": "Did my refund go through? It's not on my statement.", "gold_label": "Refund_not_showing_up", "split": "test"}
+{"id": "b77-0119", "text": "How do I receive my physical card", "gold_label": "order_physical_card", "split": "test"}
+{"id": "b77-0120", "text": "My ATM transaction was unsuccessful.", "gold_label": "declined_cash_withdrawal", "split": "test"}
+{"id": "b77-0121", "text": "Do you accept other currencies besides US Dollars?", "gold_label": "supported_cards_and_currencies", "split": "test"}
+{"id": "b77-0122", "text": "My card payment did not complete.", "gold_label": "declined_card_payment", "split": "test"}
+{"id": "b77-0123", "text": "How long should my new card take to arrive?", "gold_label": "card_arrival", "split": "test"}
+{"id": "b77-0124", "text": "What is the limit to number of transactions I can do with a disposable card?", "gold_label": "disposable_card_limits", "split": "test"}
+{"id": "b77-0125", "text": "I think someone has access to my card numbers that shouldn't.", "gold_label": "compromised_card", "split": "test"}
+{"id": "b77-0126", "text": "What is the purpose of the extra fee that is showing up on my statement?", "gold_label": "extra_charge_on_statement", "split": "test"}
+{"id": "b77-0127", "text": "I wasn't applied the correct exchange rate for an item I bought", "gold_label": "card_payment_wrong_exchange_rate", "split": "test"}
+{"id": "b77-0128", "text": "What are the fees of using an international card to add money?", "gold_label": "top_up_by_card_charge", "split": "test"}
+{"id": "b77-0129", "text": "How can I find out where my contactless works?", "gold_label": "contactless_not_working", "split": "test"}
+{"id": "b77-0130", "text": "My address has changed.", "gold_label": "edit_personal_details", "split": "test"}
+{"id": "b77-0131", "text": "Is there a fee for withdrawing cash?", "gold_label": "cash_withdrawal_charge", "split": "test"}
+{"id": "b77-0132", "text": "Where do I find the top-up verification code?", "gold_label": "verify_top_up", "split": "test"}
+{"id": "b77-0133", "text": "I have a strange direct debit in my statement", "gold_label": "direct_debit_payment_not_recognised", "split": "test"}
+{"id": "b77-0134", "text": "Do you support all cards and currencies?", "gold_label": "supported_cards_and_currencies", "split": "test"}
+{"id": "b77-0135", "text": "I am still waiting for a money transfer to show", "gold_label": "pending_transfer", "split": "test"}
+{"id": "b77-0136", "text": "If I lost my phone, can someone use my account?", "gold_label": "lost_or_stolen_phone", "split": "test"}
+{"id": "b77-0137", "text": "I can't verify my identity.", "gold_label": "unable_to_verify_identity", "split": "test"}
+{"id": "b77-0138", "text": "Is my pending cash withdrawal processed?", "gold_label": "pending_cash_withdrawal", "split": "test"}
+{"id": "b77-0139", "text": "My virtual card won't work.", "gold_label": "virtual_card_not_working", "split": "test"}
+{"id": "b77-0140", "text": "how long til my cash out goes through?", "gold_label": "pending_cash_withdrawal", "split": "test"}
+{"id": "b77-0141", "text": "I requested a refund from a merchant days ago but I do not see it in my account.", "gold_label": "Refund_not_showing_up", "split": "test"}
+{"id": "b77-0142", "text": "Could you please check one of my transfer which i made few hours ago from my UK bank account, as its not showing yet.", "gold_label": "balance_not_updated_after_bank_transfer", "split": "test"}
+{"id": "b77-0143", "text": "Can I use this to receive my salary?", "gold_label": "receiving_money", "split": "test"}
+{"id": "b77-0144", "text": "Where can I find the card PIN?", "gold_label": "get_physical_card", "split": "test"}
+{"id": "b77-0145", "text": "What countries are you currently in?", "gold_label": "country_support", "split": "test"}
+{"id": "b77-0146", "text": "Is my card accepted everywhere?", "gold_label": "card_acceptance", "split": "test"}
+{"id": "b77-0147", "text": "Will I get a curreng foreign exchange rate?", "gold_label": "exchange_rate", "split": "test"}
+{"id": "b77-0148", "text": "How long do transfers need to come through? I sent some money to a friend, she needs it urgently, but seems it's still not there yet after a couple hours.", "gold_label": "transfer_not_received_by_recipient", "split": "test"}
+{"id": "b77-0149", "text": "What is the reason for this fee I got after a simple cash withdrawal?", "gold_label": "cash_withdrawal_charge", "split": "test"}
+{"id": "b77-0150", "text": "Hi, I would like to file a claim for an inquiry. I am a frequent customer of the company in question and have never had any issue with my purchases, payments, or otherwise. However, the price deducted for an item I purchased a couple of weeks ago has been returned to my checking account. Was there an issue with my payment? The item has already been delivered to me.", "gold_label": "reverted_card_payment?", "split": "test"}
+{"id": "b77-0151", "text": "What should I do if I see a payment I didn't make?", "gold_label": "card_payment_not_recognised", "split": "test"}
+{"id": "b77-0152", "text": "I would like to change my card PIN.", "gold_label": "change_pin", "split": "test"}
+{"id": "b77-0153", "text": "What are the top-up limits?", "gold_label": "top_up_limits", "split": "test"}
+{"id": "b77-0154", "text": "What will I be charged for a physical card?", "gold_label": "order_physical_card", "split": "test"}
+{"id": "b77-0155", "text": "Is there something wrong with your website? I tried topping up my account and it's been close to two hours now and it's still at \"pending\" for some reason. I just joined with you guys and this is the first attempt at this, so maybe I'm wrong, but shouldn't this be instant?", "gold_label": "pending_top_up", "split": "test"}
+{"id": "b77-0156", "text": "My top up was denied in the app.", "gold_label": "top_up_failed", "split": "test"}
+{"id": "b77-0157", "text": "There is an extra charge on my app that I was not told about or I was aware of!", "gold_label": "extra_charge_on_statement", "split": "test"}
+{"id": "b77-0158", "text": "If I make a top-up are there charges applied?", "gold_label": "top_up_by_bank_transfer_charge", "split": "test"}
+{"id": "b77-0159", "text": "My American Express is in my Apple Pay and the top up is failing, why?", "gold_label": "apple_pay_or_google_pay", "split": "test"}
+{"id": "b77-0160", "text": "This company is bad, please delete my account.", "gold_label": "terminate_account", "split": "test"}
+{"id": "b77-0161", "text": "I recently got charged twice from a restaurant that I was at this week and I would like for one of those payments to be removed from my account.", "gold_label": "transaction_charged_twice", "split": "test"}
+{"id": "b77-0162", "text": "I didn't get all the cash I requested for at the ATM", "gold_label": "wrong_amount_of_cash_received", "split": "test"}
+{"id": "b77-0163", "text": "I'm attempting to top-up my account but it has been pending for an hour.", "gold_label": "pending_top_up", "split": "test"}
+{"id": "b77-0164", "text": "Next month my card will expire, do I need to order a new one?", "gold_label": "card_about_to_expire", "split": "test"}
+{"id": "b77-0165", "text": "What is the best way to exchange currency?", "gold_label": "exchange_via_app", "split": "test"}
+{"id": "b77-0166", "text": "I need the source of my funds verified. How do I do this?", "gold_label": "verify_source_of_funds", "split": "test"}
+{"id": "b77-0167", "text": "Will topping up by transfer lead to a charge on my account?", "gold_label": "top_up_by_bank_transfer_charge", "split": "test"}
+{"id": "b77-0168", "text": "I attempted to use my card while I was intoxicated, and I failed to input my PIN, and the machine kept my card. How soon can I have it back?", "gold_label": "pin_blocked", "split": "test"}
+{"id": "b77-0169", "text": "how do I top up my money automatically", "gold_label": "automatic_top_up", "split": "test"}
+{"id": "b77-0170", "text": "How can I get my physical card to work?", "gold_label": "card_not_working", "split": "test"}
+{"id": "b77-0171", "text": "I have completed a transfer but it is not showing up.", "gold_label": "balance_not_updated_after_bank_transfer", "split": "test"}
+{"id": "b77-0172", "text": "My phone is lost.  What do I do to prevent someone from using the app?", "gold_label": "lost_or_stolen_phone", "split": "test"}
+{"id": "b77-0173", "text": "Problems with top up", "gold_label": "top_up_failed", "split": "test"}
+{"id": "b77-0174", "text": "i need my card quick", "gold_label": "card_delivery_estimate", "split": "test"}
+{"id": "b77-0175", "text": "Show me please how to reset my passcode.", "gold_label": "passcode_forgotten", "split": "test"}
+{"id": "b77-0176", "text": "Somehow I am missing my card.  What should I do?", "gold_label": "lost_or_stolen_card", "split": "test"}
+{"id": "b77-0177", "text": "May I have another card?", "gold_label": "getting_spare_card", "split": "test"}
+{"id": "b77-0178", "text": "When will the transfer be completed?", "gold_label": "pending_transfer", "split": "test"}
+{"id": "b77-0179", "text": "My disposable virtual card will not work", "gold_label": "virtual_card_not_working", "split": "test"}
+{"id": "b77-0180", "text": "I topped up but the app reverted it", "gold_label": "top_up_reverted", "split": "test"}
+{"id": "b77-0181", "text": "I'm really stuck. I don't know why but my card payment has not gone through.", "gold_label": "declined_card_payment", "split": "test"}
+{"id": "b77-0182", "text": "How many days does a transfer from the US take?", "gold_label": "transfer_timing", "split": "test"}
+{"id": "b77-0183", "text": "How do I go forth verifying my top-up card?", "gold_label": "verify_top_up", "split": "test"}
+{"id": "b77-0184", "text": "When will the transfer go through?", "gold_label": "pending_transfer", "split": "test"}
+{"id": "b77-0185", "text": "Help me locate the nearest ATM.", "gold_label": "atm_support", "split": "test"}
+{"id": "b77-0186", "text": "How can I check the exchange rate applied to my transaction?", "gold_label": "card_payment_wrong_exchange_rate", "split": "test"}
+{"id": "b77-0187", "text": "Do you support the EU?", "gold_label": "country_support", "split": "test"}
+{"id": "b77-0188", "text": "Why was I charged for card payment?", "gold_label": "card_payment_fee_charged", "split": "test"}
+{"id": "b77-0189", "text": "I need my card quickly", "gold_label": "card_delivery_estimate", "split": "test"}
+{"id": "b77-0190", "text": "I need some help with identity verification.", "gold_label": "verify_my_identity", "split": "test"}
+{"id": "b77-0191", "text": "I topped up my account and even though it was confirmed at first, the money isn't there anymore! why did this happen, and where did my money go?", "gold_label": "top_up_reverted", "split": "test"}
+{"id": "b77-0192", "text": "How much am I charged for a SEPA transfer?", "gold_label": "top_up_by_bank_transfer_charge", "split": "test"}
+{"id": "b77-0193", "text": "Why is a transaction showing as pending when I recieved cash from an ATM?", "gold_label": "pending_cash_withdrawal", "split": "test"}
+{"id": "b77-0194", "text": "Are my friends able to top up my account?", "gold_label": "topping_up_by_card", "split": "test"}
+{"id": "b77-0195", "text": "The app denied my top-up", "gold_label": "top_up_failed", "split": "test"}
+{"id": "b77-0196", "text": "Why is the exchange rate wrong for my international withdrawal?", "gold_label": "wrong_exchange_rate_for_cash_withdrawal", "split": "test"}
+{"id": "b77-0197", "text": "What can I do if contactless doesn't work?", "gold_label": "contactless_not_working", "split": "test"}
+{"id": "b77-0198", "text": "How would you use a disposable card?", "gold_label": "get_disposable_virtual_card", "split": "test"}
+{"id": "b77-0199", "text": "I would like to change my PIN but I am not currently in the country.", "gold_label": "change_pin", "split": "test"}
+{"id": "b77-0200", "text": "Please advise what is the exchange rate", "gold_label": "exchange_rate", "split": "test"}
+{"id": "b77-0201", "text": "I am awaiting my refund", "gold_label": "Refund_not_showing_up", "split": "test"}
+{"id": "b77-0202", "text": "I would like to exchange currencies, but is there an extra charge to do so?", "gold_label": "exchange_charge", "split": "test"}
+{"id": "b77-0203", "text": "What should I do to verify my identity?", "gold_label": "verify_my_identity", "split": "test"}
+{"id": "b77-0204", "text": "How do I use auto top up?", "gold_label": "automatic_top_up", "split": "test"}
+{"id": "b77-0205", "text": "How do I go through the process of currency exchange?", "gold_label": "exchange_via_app", "split": "test"}
+{"id": "b77-0206", "text": "I bought an item and noticed the exchange rate was not correct.", "gold_label": "card_payment_wrong_exchange_rate", "split": "test"}
+{"id": "b77-0207", "text": "Where is the virtual card located?", "gold_label": "getting_virtual_card", "split": "test"}
+{"id": "b77-0208", "text": "If I don't want a physical card can i get a virtual version?", "gold_label": "getting_virtual_card", "split": "test"}
+{"id": "b77-0209", "text": "If I receive foreign currencies, am I able to exchange them on the app?", "gold_label": "exchange_via_app", "split": "test"}
+{"id": "b77-0210", "text": "Can I link my new card?", "gold_label": "card_linking", "split": "test"}
+{"id": "b77-0211", "text": "How come you charge for cash withdrawals? I withdrew cash after buying groceries today, and there seems to be a new fee", "gold_label": "cash_withdrawal_charge", "split": "test"}
+{"id": "b77-0212", "text": "I was charge a fee for my transfer, why?", "gold_label": "transfer_fee_charged", "split": "test"}
+{"id": "b77-0213", "text": "I have paid money into my account but it doesn't show.", "gold_label": "balance_not_updated_after_cheque_or_cash_deposit", "split": "test"}
+{"id": "b77-0214", "text": "I just got my card and want to use it, how do I activate my card?", "gold_label": "activate_my_card", "split": "test"}
+{"id": "b77-0215", "text": "Why are my payments showing pending?", "gold_label": "pending_card_payment", "split": "test"}
+{"id": "b77-0216", "text": "I am highly unsatisfied with this company and want to delete my account!", "gold_label": "terminate_account", "split": "test"}
+{"id": "b77-0217", "text": "Are there any ATM machines near me?", "gold_label": "atm_support", "split": "test"}
+{"id": "b77-0218", "text": "Why would i not be able to do a transfer to a beneficiary?", "gold_label": "beneficiary_not_allowed", "split": "test"}
+{"id": "b77-0219", "text": "How long will this card payment stay pending?", "gold_label": "pending_card_payment", "split": "test"}
+{"id": "b77-0220", "text": "Is it possible to get a Visa here?", "gold_label": "visa_or_mastercard", "split": "test"}
+{"id": "b77-0221", "text": "Are both Visa and Mastercard offered?", "gold_label": "visa_or_mastercard", "split": "test"}
+{"id": "b77-0222", "text": "Why doesn't the app believe I am who I say I am?", "gold_label": "unable_to_verify_identity", "split": "test"}
+{"id": "b77-0223", "text": "Can I exchange currencies?", "gold_label": "fiat_currency_support", "split": "test"}
+{"id": "b77-0224", "text": "Why doesn't my balance reflect my transfer", "gold_label": "balance_not_updated_after_bank_transfer", "split": "test"}
+{"id": "b77-0225", "text": "Why am I being asked to have an identity check", "gold_label": "why_verify_identity", "split": "test"}
+{"id": "b77-0226", "text": "There is a problem with my card. Somebody has removed money from my account in a town I haven't been to. Can you please freeze my account immediately?", "gold_label": "cash_withdrawal_not_recognised", "split": "test"}
+{"id": "b77-0227", "text": "where can user find pin?", "gold_label": "get_physical_card", "split": "test"}
+{"id": "b77-0228", "text": "What should I do if I think that someone else may be using my card.", "gold_label": "compromised_card", "split": "test"}
+{"id": "b77-0229", "text": "My card doesn't accept any transaction at all. What's wrong??", "gold_label": "card_not_working", "split": "test"}
+{"id": "b77-0230", "text": "My transfer appeared not to work.", "gold_label": "failed_transfer", "split": "test"}
+{"id": "b77-0231", "text": "Can I use my card for payment all over the world?", "gold_label": "card_acceptance", "split": "test"}

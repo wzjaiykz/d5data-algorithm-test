@@ -1,0 +1,9 @@
+id,text,gold_label,predicted_label,confidence,word_count,error,raw_output
+b77-0010,I tried to use my card to top up but all of the money has disappeared.,topping_up_by_card,top_up_failed,0.82,16,,"{""label"": ""top_up_failed"", ""confidence"": 0.82}"
+b77-0025,"I need the right foreign money, at the right rate, at ATMs, when I go abroad.",wrong_exchange_rate_for_cash_withdrawal,exchange_rate,0.62,16,,"{""label"": ""exchange_rate"", ""confidence"": 0.62}"
+b77-0027,Is there tracking info available?,card_arrival,card_delivery_estimate,0.6,5,,"{""label"": ""card_delivery_estimate"", ""confidence"": 0.6}"
+b77-0033,What's the deal with no cryptocurrency on your app?,beneficiary_not_allowed,fiat_currency_support,0.9,9,,"{""label"": ""fiat_currency_support"", ""confidence"": 0.9}"
+b77-0034,Somebody used my card to make a purchase,card_payment_not_recognised,compromised_card,0.95,8,,"{""label"": ""compromised_card"", ""confidence"": 0.95}"
+b77-0038,I am waiting for my card to arrive.,card_delivery_estimate,card_arrival,0.95,8,,"{""label"": ""card_arrival"", ""confidence"": 0.95}"
+b77-0043,Is there a charge for physical cards,order_physical_card,card_payment_fee_charged,0.6,7,,"{""label"": ""card_payment_fee_charged"", ""confidence"": 0.6}"
+b77-0050,Someone needs to make me aware when there are extra charges for payments. I happened to be looking at the app earlier and noticed a charge associated to a payment that was extra that no one made me aware of before at all.,card_payment_fee_charged,extra_charge_on_statement,0.82,43,,"{""label"": ""extra_charge_on_statement"", ""confidence"": 0.82}"

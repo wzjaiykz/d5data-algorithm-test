@@ -1,0 +1,17 @@
+{
+  "dataset": "Banking77",
+  "source_url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/master/banking_data/test.csv",
+  "license": "CC BY 4.0",
+  "license_url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/master/LICENSE",
+  "citation": "Casanueva et al. (2020), Efficient Intent Detection with Dual Sentence Encoders, https://arxiv.org/abs/2003.04807",
+  "split": "test",
+  "source_test_rows": 3080,
+  "n_intents": 77,
+  "per_intent_total_in_test": [
+    40
+  ],
+  "seed": 42,
+  "per_intent_sampled": 3,
+  "n_samples": 231,
+  "created_utc": "2026-11-12T14:58:00+00:00"
+}

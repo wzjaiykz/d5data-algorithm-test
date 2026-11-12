@@ -1,0 +1,958 @@
+{
+  "run": {
+    "started_utc": "2026-11-12T15:02:56+00:00",
+    "finished_utc": "2026-11-12T15:03:07+00:00",
+    "input": "data\\banking77_sample.jsonl",
+    "output": "outputs\\predictions_zero_shot_repeat50.jsonl",
+    "provider": "deepseek",
+    "concurrency": 8,
+    "temperature": 0,
+    "python": "3.12.10",
+    "model": "deepseek-flash",
+    "prompt_variant": "zero_shot",
+    "wall_clock_s": 10.73,
+    "n_total": 50,
+    "n_scored": 50,
+    "n_errors": 0,
+    "n_invalid_label_or_parse": 0,
+    "n_api_errors": 0,
+    "n_valid_labels": 50,
+    "accuracy_ci95_wilson": [
+      0.7149,
+      0.9166
+    ],
+    "notes": "accuracy excludes rows with no valid label; n_errors counts them. The sample is 3 examples per intent, so per-class accuracy is coarse."
+  },
+  "summary": {
+    "accuracy": 0.84,
+    "macro_f1": 0.8258,
+    "correct": 42,
+    "n_scored": 50,
+    "n_errors": 0,
+    "n_total": 50,
+    "perfect_classes": 36,
+    "zero_accuracy_classes": 7,
+    "n_classes": 77
+  },
+  "per_class": {
+    "Refund_not_showing_up": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "activate_my_card": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "age_limit": {
+      "support": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "apple_pay_or_google_pay": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "atm_support": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "automatic_top_up": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "balance_not_updated_after_bank_transfer": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "balance_not_updated_after_cheque_or_cash_deposit": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "beneficiary_not_allowed": {
+      "support": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "cancel_transfer": {
+      "support": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "card_about_to_expire": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "card_acceptance": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "card_arrival": {
+      "support": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "card_delivery_estimate": {
+      "support": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "card_linking": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "card_not_working": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "card_payment_fee_charged": {
+      "support": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "card_payment_not_recognised": {
+      "support": 2,
+      "correct": 1,
+      "accuracy": 0.5,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666
+    },
+    "card_payment_wrong_exchange_rate": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "card_swallowed": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "cash_withdrawal_charge": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "cash_withdrawal_not_recognised": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "change_pin": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "compromised_card": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "contactless_not_working": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "country_support": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "declined_card_payment": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "declined_cash_withdrawal": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "declined_transfer": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "direct_debit_payment_not_recognised": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "disposable_card_limits": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "edit_personal_details": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "exchange_charge": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "exchange_rate": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "exchange_via_app": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "extra_charge_on_statement": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "failed_transfer": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "fiat_currency_support": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666
+    },
+    "get_disposable_virtual_card": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "get_physical_card": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "getting_spare_card": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "getting_virtual_card": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "lost_or_stolen_card": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "lost_or_stolen_phone": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "order_physical_card": {
+      "support": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "passcode_forgotten": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "pending_card_payment": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "pending_cash_withdrawal": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "pending_top_up": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "pending_transfer": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "pin_blocked": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "receiving_money": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "request_refund": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reverted_card_payment?": {
+      "support": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "supported_cards_and_currencies": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "terminate_account": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "top_up_by_bank_transfer_charge": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "top_up_by_card_charge": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "top_up_by_cash_or_cheque": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "top_up_failed": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "top_up_limits": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "top_up_reverted": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "topping_up_by_card": {
+      "support": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "transaction_charged_twice": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "transfer_fee_charged": {
+      "support": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "transfer_into_account": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "transfer_not_received_by_recipient": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "transfer_timing": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "unable_to_verify_identity": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "verify_my_identity": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "verify_source_of_funds": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "verify_top_up": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "virtual_card_not_working": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "visa_or_mastercard": {
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "why_verify_identity": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "wrong_amount_of_cash_received": {
+      "support": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "wrong_exchange_rate_for_cash_withdrawal": {
+      "support": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "top_confusions": [
+    {
+      "gold": "topping_up_by_card",
+      "predicted": "top_up_failed",
+      "count": 1
+    },
+    {
+      "gold": "card_arrival",
+      "predicted": "card_delivery_estimate",
+      "count": 1
+    },
+    {
+      "gold": "wrong_exchange_rate_for_cash_withdrawal",
+      "predicted": "exchange_rate",
+      "count": 1
+    },
+    {
+      "gold": "beneficiary_not_allowed",
+      "predicted": "fiat_currency_support",
+      "count": 1
+    },
+    {
+      "gold": "card_payment_not_recognised",
+      "predicted": "compromised_card",
+      "count": 1
+    },
+    {
+      "gold": "card_delivery_estimate",
+      "predicted": "card_arrival",
+      "count": 1
+    },
+    {
+      "gold": "order_physical_card",
+      "predicted": "card_payment_fee_charged",
+      "count": 1
+    },
+    {
+      "gold": "card_payment_fee_charged",
+      "predicted": "extra_charge_on_statement",
+      "count": 1
+    }
+  ],
+  "calibration": {
+    "bins": [
+      {
+        "low": 0.5,
+        "high": 0.6,
+        "n": 1,
+        "avg_confidence": 0.55,
+        "accuracy": 1.0
+      },
+      {
+        "low": 0.6,
+        "high": 0.7,
+        "n": 4,
+        "avg_confidence": 0.605,
+        "accuracy": 0.25
+      },
+      {
+        "low": 0.7,
+        "high": 0.8,
+        "n": 1,
+        "avg_confidence": 0.72,
+        "accuracy": 1.0
+      },
+      {
+        "low": 0.8,
+        "high": 0.9,
+        "n": 6,
+        "avg_confidence": 0.835,
+        "accuracy": 0.6667
+      },
+      {
+        "low": 0.9,
+        "high": 1.0,
+        "n": 38,
+        "avg_confidence": 0.9497,
+        "accuracy": 0.9211
+      }
+    ],
+    "ece": 0.085,
+    "n_with_confidence": 50
+  },
+  "coverage_curve": [
+    {
+      "coverage": 1.0,
+      "n_auto_labeled": 50,
+      "accuracy": 0.84,
+      "errors_caught": 8,
+      "error_recall": 1.0
+    },
+    {
+      "coverage": 0.9,
+      "n_auto_labeled": 45,
+      "accuracy": 0.8889,
+      "errors_caught": 5,
+      "error_recall": 0.625
+    },
+    {
+      "coverage": 0.8,
+      "n_auto_labeled": 40,
+      "accuracy": 0.925,
+      "errors_caught": 3,
+      "error_recall": 0.375
+    },
+    {
+      "coverage": 0.7,
+      "n_auto_labeled": 35,
+      "accuracy": 0.9429,
+      "errors_caught": 2,
+      "error_recall": 0.25
+    },
+    {
+      "coverage": 0.6,
+      "n_auto_labeled": 30,
+      "accuracy": 0.9333,
+      "errors_caught": 2,
+      "error_recall": 0.25
+    },
+    {
+      "coverage": 0.5,
+      "n_auto_labeled": 25,
+      "accuracy": 0.96,
+      "errors_caught": 1,
+      "error_recall": 0.125
+    }
+  ],
+  "length_bins": [
+    {
+      "bucket": "Q1_shortest",
+      "n": 14,
+      "accuracy": 0.8571,
+      "avg_confidence": 0.8771
+    },
+    {
+      "bucket": "Q2",
+      "n": 14,
+      "accuracy": 0.7857,
+      "avg_confidence": 0.935
+    },
+    {
+      "bucket": "Q3",
+      "n": 10,
+      "accuracy": 1.0,
+      "avg_confidence": 0.852
+    },
+    {
+      "bucket": "Q4_longest",
+      "n": 12,
+      "accuracy": 0.75,
+      "avg_confidence": 0.9083
+    }
+  ],
+  "prediction_bias_top_over": [
+    {
+      "label": "compromised_card",
+      "predicted_count": 1,
+      "gold_count": 0,
+      "delta": 1
+    },
+    {
+      "label": "exchange_rate",
+      "predicted_count": 1,
+      "gold_count": 0,
+      "delta": 1
+    },
+    {
+      "label": "extra_charge_on_statement",
+      "predicted_count": 1,
+      "gold_count": 0,
+      "delta": 1
+    },
+    {
+      "label": "fiat_currency_support",
+      "predicted_count": 2,
+      "gold_count": 1,
+      "delta": 1
+    },
+    {
+      "label": "top_up_failed",
+      "predicted_count": 1,
+      "gold_count": 0,
+      "delta": 1
+    },
+    {
+      "label": "Refund_not_showing_up",
+      "predicted_count": 0,
+      "gold_count": 0,
+      "delta": 0
+    },
+    {
+      "label": "activate_my_card",
+      "predicted_count": 0,
+      "gold_count": 0,
+      "delta": 0
+    },
+    {
+      "label": "age_limit",
+      "predicted_count": 2,
+      "gold_count": 2,
+      "delta": 0
+    },
+    {
+      "label": "apple_pay_or_google_pay",
+      "predicted_count": 0,
+      "gold_count": 0,
+      "delta": 0
+    },
+    {
+      "label": "atm_support",
+      "predicted_count": 0,
+      "gold_count": 0,
+      "delta": 0
+    }
+  ],
+  "prediction_bias_top_under": [
+    {
+      "label": "wrong_exchange_rate_for_cash_withdrawal",
+      "predicted_count": 0,
+      "gold_count": 1,
+      "delta": -1
+    },
+    {
+      "label": "topping_up_by_card",
+      "predicted_count": 0,
+      "gold_count": 1,
+      "delta": -1
+    },
+    {
+      "label": "order_physical_card",
+      "predicted_count": 0,
+      "gold_count": 1,
+      "delta": -1
+    },
+    {
+      "label": "card_payment_not_recognised",
+      "predicted_count": 1,
+      "gold_count": 2,
+      "delta": -1
+    },
+    {
+      "label": "beneficiary_not_allowed",
+      "predicted_count": 0,
+      "gold_count": 1,
+      "delta": -1
+    },
+    {
+      "label": "wrong_amount_of_cash_received",
+      "predicted_count": 1,
+      "gold_count": 1,
+      "delta": 0
+    },
+    {
+      "label": "why_verify_identity",
+      "predicted_count": 1,
+      "gold_count": 1,
+      "delta": 0
+    },
+    {
+      "label": "visa_or_mastercard",
+      "predicted_count": 0,
+      "gold_count": 0,
+      "delta": 0
+    },
+    {
+      "label": "virtual_card_not_working",
+      "predicted_count": 0,
+      "gold_count": 0,
+      "delta": 0
+    },
+    {
+      "label": "verify_top_up",
+      "predicted_count": 1,
+      "gold_count": 1,
+      "delta": 0
+    }
+  ],
+  "latency": {
+    "mean_ms": 1256.8,
+    "p50_ms": 1175.9,
+    "p95_ms": 2065.6,
+    "min_ms": 648.2,
+    "max_ms": 2734.7
+  },
+  "usage": {
+    "prompt_tokens": 30612,
+    "completion_tokens": 889,
+    "total_tokens": 31501,
+    "cache_hit_tokens": 19327,
+    "cache_miss_tokens": 11285
+  },
+  "cost": {
+    "off_peak_usd": 0.002284,
+    "peak_usd": 0.004568,
+    "prices_usd_per_mtok": {
+      "cache_hit": 0.003,
+      "cache_miss": 0.15,
+      "output": 0.6
+    },
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "as_of": "2026-11-12",
+    "note": "Peak = 01:00-04:00 and 06:00-10:00 UTC on weekdays; off-peak is half."
+  }
+}

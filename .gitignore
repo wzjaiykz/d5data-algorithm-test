@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+pytest-cache-files-*/
+tests/_tmp/
+.venv/
+.env
+*.zip
+report/report_body.typ
+report/report.typ
+report/report-*.png

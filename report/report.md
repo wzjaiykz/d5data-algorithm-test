@@ -2,7 +2,7 @@
 
 *Banking77 · DeepSeek-V4.1-Flash · 231 utterances · 77 intents · 12 November 2026*
 
-**TL;DR.** A zero-shot foundation-model labeler reaches **80.9%** accuracy (macro-F1 **0.794**) on a class-balanced 231-item Banking77 sample for **$0.011** and **37 s** wall-clock. Seven label-level prompt hints lift it to **84.0%** (+3.0 pp; 13 fixed, 6 broken; McNemar p=0.17). The remaining errors are dominated by near-duplicate taxonomy labels, not by model capability.
+**TL;DR.** A zero-shot foundation-model labeler reaches **80.9%** accuracy (macro-F1 **0.794**) on a class-balanced 231-item Banking77 sample for **$0.011** and **37 s** wall-clock. Seven label-level prompt hints lift it to **84.0%** (+3.0 pp; 13 fixed, 6 broken; McNemar p=0.17). The remaining errors cluster around near-duplicate taxonomy labels, not model capability.
 
 ## 1. Dataset and Task Description
 
@@ -58,7 +58,7 @@ The repository also includes `--provider mock` (no key, used by pytest/CI), `out
 | card_payment_not_recognised → compromised_card | 2 |
 | cash_withdrawal_not_recognised → compromised_card | 2 |
 
-Four patterns explain most errors. (i) **Near-duplicate labels**: `card_arrival` and `card_delivery_estimate` are both about a card that has not arrived; the benchmark’s own labels are inconsistent (“How long does a card delivery take?” is `card_arrival`, while “I am waiting for my card to arrive” is `card_delivery_estimate`). (ii) **Label-name traps**: `get_physical_card` actually means “help with the card PIN” (105/106 training examples mention the PIN). Zero-shot predicted `passcode_forgotten` or `change_pin` for all three PIN items; the hint fixed 3/3. (iii) **Method vs outcome**: `topping_up_by_card` is a top-up method, but the model picks `top_up_failed` when the utterance mentions a failed top-up. (iv) **Lexical attraction and label gaps**: “cryptocurrency” pulls the model to `fiat_currency_support`; the taxonomy has no crypto intent, so the gold `beneficiary_not_allowed` is itself a forced fit.
+Four patterns recur across the errors. (i) **Near-duplicate labels**: `card_arrival` and `card_delivery_estimate` are both about a card that has not arrived; the benchmark’s own labels are inconsistent (“How long does a card delivery take?” is `card_arrival`, while “I am waiting for my card to arrive” is `card_delivery_estimate`). (ii) **Label-name traps**: `get_physical_card` actually means “help with the card PIN” (105/106 training examples mention the PIN). Zero-shot predicted `passcode_forgotten` or `change_pin` for all three PIN items; the hint fixed 3/3. (iii) **Method vs outcome**: `topping_up_by_card` is a top-up method, but the model picks `top_up_failed` when the utterance mentions a failed top-up. (iv) **Lexical attraction and label gaps**: “cryptocurrency” pulls the model to `fiat_currency_support`; the taxonomy has no crypto intent, so the gold `beneficiary_not_allowed` is itself a forced fit.
 
 **Confidence.** The model is overconfident at the low end (ECE 0.060). The 0.9–1.0 bin contains 185/231 items (80%), averages 0.947 confidence, and is 90.3% accurate; the 0.5–0.6 bin is 37.5% accurate (n=8). Confidence still ranks errors usefully:
 
@@ -77,7 +77,7 @@ At 80% coverage, a human reviews 46 items and the automatic portion is 90.3% acc
 
 **Three concrete errors (hinted run).**
 
-1. **Lexical attraction + taxonomy gap.** “What’s the deal with no cryptocurrency on your app?” → `fiat_currency_support` (gold `beneficiary_not_allowed`, confidence 0.60). “Currency” in “cryptocurrency” dominates; the label set has no crypto intent, so the gold label is a poor fit and the model has no valid escape hatch.
+1. **Lexical attraction + taxonomy gap.** “What’s the deal with no cryptocurrency on your app?” → `fiat_currency_support` (gold `beneficiary_not_allowed`, confidence 0.60). “Currency” in “cryptocurrency” is the strongest lexical cue; the label set has no crypto intent, so the gold label is a poor fit and the model has no valid escape hatch.
 2. **Method vs outcome.** “I tried to use my card to top up but all of the money has disappeared.” → `top_up_failed` (gold `topping_up_by_card`, confidence 0.72). Both the method and the failure are present; the model selects the failure, while the gold labels the method. The taxonomy mixes two dimensions in one label set.
 3. **Specific vs general.** “When will the transfer be completed?” → `transfer_timing` (gold `pending_transfer`, confidence 0.95). The model treats a specific in-flight transfer as a general speed question; the benchmark does not state which label wins when both apply. The high confidence makes this a good candidate for human review.
 
@@ -100,7 +100,7 @@ The API cost excludes one-off prompt engineering and evaluation. The human speed
 1. **Better prompts (measured).** The seven hints gave +3.03 pp, but with 6 regressions and p=0.17. The next step is a proper dev/test split, label definitions instead of examples, and de-semanticized label IDs to separate language understanding from label-name matching.
 2. **Confidence filtering / human-in-the-loop (measured).** At 80% coverage the auto-labeled portion reaches 90.3% and captures 48.6% of errors in the 20% sent to humans; at 90% coverage, 88.5% and 64.9%. Because confidence is overconfident at the low end, calibrate it on a dev set or combine it with log-probabilities or model disagreement.
 3. **Multi-model voting / cascade.** Run flash and pro (or three samples at temperature 0.7) and use disagreement as an uncertainty signal; only escalate the bottom 20% to pro. Pro costs about 4.4× flash on input and 3.3× on output, so a cascade keeps the average cost close to flash while buying a second opinion on the hard tail.
-4. **Fix the taxonomy (highest leverage).** The residual errors are dominated by label boundaries: merge or define `card_arrival` vs `card_delivery_estimate`, `pending_transfer` vs `transfer_timing`, and `card_payment_not_recognised` vs `compromised_card`; rename `get_physical_card` to something like `card_pin_help`; add `crypto`, `other`, and `unknown` so the model can abstain. A second-annotator audit and a real production sample would test whether these boundaries matter outside the benchmark.
+4. **Fix the taxonomy (highest leverage).** The residual errors cluster at label boundaries: merge or define `card_arrival` vs `card_delivery_estimate`, `pending_transfer` vs `transfer_timing`, and `card_payment_not_recognised` vs `compromised_card`; rename `get_physical_card` to something like `card_pin_help`; add `crypto`, `other`, and `unknown` so the model can abstain. A second-annotator audit and a real production sample would test whether these boundaries matter outside the benchmark.
 
 **Artifacts and reproducibility.** `demo_code.py` is self-contained and has a `--provider mock` mode for CI; the 231-row sample and both prediction files are committed, together with `*.metrics.json`, `*.errors.csv`, and `tests/`. Python 3.12 + `httpx`; `pytest -q` needs no API key. Rebuild this PDF with `python scripts/build_report.py` (Pandoc + Typst). The key is read from `DEEPSEEK_API_KEY` and is never written to the repository.
 

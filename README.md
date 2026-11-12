@@ -172,7 +172,7 @@ Top confusion pairs in the hinted run:
 | `card_payment_not_recognised` → `compromised_card` | 2 |
 | `cash_withdrawal_not_recognised` → `compromised_card` | 2 |
 
-The residual errors are dominated by near-duplicate taxonomy labels, not by a
+The residual errors cluster around near-duplicate taxonomy labels rather than a
 lack of model capability. `card_arrival` and `card_delivery_estimate` are both
 about a card that has not arrived; the benchmark's own labels are inconsistent
 ("How long does a card delivery take?" is `card_arrival`, while "I am waiting
